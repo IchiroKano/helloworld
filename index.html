@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -23,6 +23,7 @@
 
 <header>
   <nav class="cyan darken-1" role="navigation">
+
     <!-- nav-wrapperを指定する -->
     <div class="nav-wrapper container">
       <a id="logo-container" href="#index-banner" class="brand-logo text-white">KANO TRIAL</a>
@@ -63,6 +64,7 @@
       <p>
         Cardって何？どんなことができるの？を試してみる。
       </p>
+      <p id="popup_1">[ここをクリック]</p>
     </div>
     <!-- cardの下部に表示される領域 -->
     <div class="card-action">
@@ -186,6 +188,17 @@
             </div>
           </div>
         </footer>
+
+<script type="text/javascript">
+
+    // popup_1をクリックしたら、functionの中身を実行
+    var popup_1 = document.getElementById("popup_1");
+
+    popup_1.onclick = function popup1Click() {
+        alert("ポップアップをクリックできた");
+    }
+
+</script>
 
 </body>
 </html>
